@@ -1,0 +1,6 @@
+printstring("CS");
+printstring(" ");
+printstring("4 7  3");
+printstring(" UIC ");
+printstring("2024");
+return 0;

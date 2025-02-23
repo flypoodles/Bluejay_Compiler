@@ -1,0 +1,11 @@
+fun functionWithLocals void (i int)
+  var a int := (i) ? 300 : 101;
+  var b int := (a % 2) ? 5: 6;
+  var c int := (b % 2) ? 10: 20;
+
+  printint(a+b+c+i);
+
+
+functionWithLocals(100);
+functionWithLocals(0);
+return 0;

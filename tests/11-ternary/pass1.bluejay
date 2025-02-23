@@ -1,0 +1,6 @@
+var variable int := (5) ? 3 : 10;
+var variable2 int := (0) ? 3 : 10;
+printint(variable);
+printstring(" ");
+printint(variable2);
+return 0;

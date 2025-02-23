@@ -1,0 +1,18 @@
+# Sample MIPS code to test the simulator
+# This is not how your code should look like, this is just a sample
+
+.data
+		what_to_print: .asciiz "Hello World\n"
+.text
+.globl main
+main:
+		la $a0,what_to_print
+		addiu $sp,$sp,-4		# PUSH
+		sw $a0,($sp)			# PUSH
+		addiu $sp,$sp,-4		# PUSH
+		sw $a0,($sp)			# PUSH
+		li $v0,4
+		syscall
+		move $a0,$zero
+		li $v0,10
+		syscall

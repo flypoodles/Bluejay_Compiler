@@ -1,0 +1,4 @@
+var variable int := (473 + 3) ? 6-5 : 1+2;
+
+printint(variable);
+return 0;

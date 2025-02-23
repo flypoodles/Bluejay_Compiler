@@ -1,0 +1,6 @@
+fun f void ()
+  printint(i);
+  printint(j);
+
+f();
+return 0;

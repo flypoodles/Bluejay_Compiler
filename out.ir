@@ -1,0 +1,20 @@
+.data
+.text
+.globl main
+main:
+		li $v0, 0			# ICONST load immediate to a register
+		sw $v0, ($sp)			# ICONST store to the top of the stack
+		addiu $sp, $sp, -4			# ICONST point sp to the next free space
+		addiu $sp, $sp, 4			# EXIT: Subtract sp 
+		lw $a0, ($sp)			# EXIT: pop the content of the stack to a0
+		sw $zero, ($sp)			# Zero the stack
+		li  $v0, 17			# EXIT load syscall number
+		syscall			# EXIT syscall
+		li $v0, 0			# ICONST load immediate to a register
+		sw $v0, ($sp)			# ICONST store to the top of the stack
+		addiu $sp, $sp, -4			# ICONST point sp to the next free space
+		addiu $sp, $sp, 4			# EXIT: Subtract sp 
+		lw $a0, ($sp)			# EXIT: pop the content of the stack to a0
+		sw $zero, ($sp)			# Zero the stack
+		li  $v0, 17			# EXIT load syscall number
+		syscall			# EXIT syscall

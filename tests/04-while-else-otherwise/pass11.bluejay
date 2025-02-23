@@ -1,0 +1,17 @@
+var n int := 0;
+
+while (n)
+  printint(473);
+  n := 0;
+otherwise
+  n := 1;
+  printint(0);
+
+while (n)
+  printint(473);
+  n := 0;
+otherwise
+  n := 1;
+  printint(0);
+
+exit(0);

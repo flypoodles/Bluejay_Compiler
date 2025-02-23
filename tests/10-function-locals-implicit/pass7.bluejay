@@ -1,0 +1,9 @@
+implicit cs473 int := 473;
+
+fun f void ()
+  printint(cs473);
+  printint(i);
+  printint(j);
+
+f();
+return 0;
